@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <input class="h-44 w-full text-6xl pt-20" id="clear" ></input>
+  <div class="w-full mx-auto flex flex-wrap text-3xl">
+    <button class="w-1/4 h-24 bg-red-900 rounded-full">MR</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full">MC</button>
+    <!-- input class = "button" type = "button" value = "C" onclick = "clearScreen()" style = "background-color: #fb0066;" / -->
+    <button class="w-2/4 h-24 bg-red-600 rounded-full" id="result" >C</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('')">M+</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('')">M-</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('*0.01')">%</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('/')">÷</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('7')">7</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('8')">8</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('9')">9</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('*')">×</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('4')">4</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('5')">5</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('6')">6</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('-')">-</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('1')">1</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('2')">2</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('3')">3</button>
+    <button class="w-1/4 h-24 bg-red-900 rounded-full" onclick="app('+')">+</button>
+    <button class="w-1/4 h-24 bg-gray-100  rounded-full" onclick="app('.')">.</button>
+    <button class="w-1/4 h-24 bg-gray-100 rounded-full" onclick="app('0')">0</button>
+    <button class="w-2/4 h-24 bg-red-900 rounded-full" onclick="calc()">=</button>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* 全デバイス共通 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* スマホサイズ */
+
+.topmenu {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+  background-color: white;
+  color: black;
+  display: flex;
+}
+
+.news {
+  flex-grow: 2; 
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.news img {
+  width: 160px;
+}
+
+.topmenu i {
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.map {
+  margin: 6px;
+  margin-left: 20px;
+
+}
+
+.container .headline{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between
+}
+
+.container h2 {
+  font-size: 20px;
+}
+
+.headline2 {
+  display: flex;
+  border: rgba(0, 0, 0, 0.281) solid 1px;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.headline2 .menus3 {
+  margin-top: 15px;
+}
+
+span {
+  color: black;
+}
+/* .topmenu .menus1 {
+  margin-right: 10px;
+  margin-left: 1px; 
+}*/
+
+.topmenu .menus3 {
+  margin: 7px;
+  margin-left: 10px;
+  width: 20%;
+  height: 50px;
+}
+
+.main {
+  border: rgba(0, 0, 0, 0.281) solid 1px;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.main li {
+padding-left: 20px;
+}
+
+.main1 {
+  color: black;
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.sub_link {
+  color: rgb(110, 110, 110);
+}
+
+.main_news {
+  width: 70%;
+  height: 40%;
+  padding: 10px;
+}
+
+.main_news span {
+  font-size: 14px;
+  display: block;
+}
+
+.main img {
+  height: 40%;
+  width: 30%;
+}
+
+.news_sub  {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  font-size: 14px;
+}
+
+
+
+/* .topmenu a {
+  width: 20%;
+  padding: 10px;
+  text-align: right; 
+} */
+
+/* タブレットサイズに変更　768px以上 */
+@media screen and (min-width: 768px) {
+  .bottommenu {
+    display: none;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
+}
+
+/* パソコンサイズに変更　1024px以上 */
+@media screen and (min-width: 1024px) {
+  .box {
+    background-color:blue;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+  } 
+}
