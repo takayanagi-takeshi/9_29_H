@@ -7,19 +7,19 @@ let app = _v => {
   document.querySelector('input').value += _v;
 };
 
-// let calc = () => {// 「＝」ボタンが押されたので計算する
-//   const vv = document.querySelector('input').value
-//   console.log(vv);
-//   const f = value + vv 
-//   update( f().toString() )
-// };
+let calc = () => {// 「＝」ボタンが押されたので計算する
+  const vv = document.querySelector('input').value
+  console.log(vv);
+  const f = value + vv 
+  update( f().toString() )
+};
 
-function calc() // 「＝」ボタンが押されたので計算する
-    {
-        const v = document.querySelector( 'input' ).value
-        const f = new Function( 'return ' + v )
-        update( f().toString() )
-    }
+// function calc() // 「＝」ボタンが押されたので計算する
+//     {
+//         const v = document.querySelector( 'input' ).value
+//         const f = new Function( 'return ' + v )
+//         update( f().toString() )
+//     }
 
   // // This function display values
   // function display(value) {
