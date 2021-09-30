@@ -7,12 +7,23 @@ let app = _v => {
   document.querySelector('input').value += _v;
 };
 
-let calc = () => {// 「＝」ボタンが押されたので計算する
-  const vv = document.querySelector('input').value
-  console.log(vv);
-  const f = value + vv 
-  update( f().toString() )
-};
+let gokei = document.getElementById("clear");
+function edit(elem) {
+  gokei.value = gokei.value + elem.value;
+}
+function calc() {
+    gokei.value = new Function("return " + gokei.value)();
+    // update( gokei.toString() )
+  }
+
+
+// let calc = () => {// 「＝」ボタンが押されたので計算する
+  // const vv = document.querySelector('input').value;
+  // console.log("ok");
+  // const f = parseInt('input') + vv; 
+  // console.log(f);
+  // update( f().toString() )
+// };
 
 // function calc() // 「＝」ボタンが押されたので計算する
 //     {
@@ -32,4 +43,4 @@ let calc = () => {// 「＝」ボタンが押されたので計算する
   // let p = document.getElementById("result").value;
   // let q = eval(p);
   // document.getElementById("result").value = q;
-  // }
+  //
