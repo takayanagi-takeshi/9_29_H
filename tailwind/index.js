@@ -7,12 +7,12 @@ let app = _v => {
   document.querySelector('input').value += _v;
 };
 
-let gokei = document.getElementById("clear");
+let total = document.getElementById("clear");
 function edit(elem) {
-  gokei.value = gokei.value + elem.value;
+  total.value = total.value + elem.value;
 }
 function calc() {
-    gokei.value = new Function("return " + gokei.value)();
+    total.value = new Function("return " + total.value)();
     // update( gokei.toString() )
   }
 
